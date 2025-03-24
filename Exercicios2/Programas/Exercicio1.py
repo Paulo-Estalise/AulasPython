@@ -4,7 +4,11 @@ e a caixa B abastece os blocos ímpares. Escreva um algoritmo que solicite ao us
  e escreva na tela qual a caixa que abastece seu bloco: a caixa a ou a caixa B.
 '''
 bloco = int(input("Em qual bloco você mora? (1-4): "))
-if bloco % 2 == 0:
-    print("Seu bloco é abastecido pela caixa A.")
+
+if 1 <= bloco <= 4:
+    if bloco % 2 == 0:
+        print("Seu bloco é abastecido pela caixa A.")
+    else:
+        print("Seu bloco é abastecido pela caixa B.")
 else:
-    print("Seu bloco é abastecido pela caixa B.")
+    print("O bloco não existe.")

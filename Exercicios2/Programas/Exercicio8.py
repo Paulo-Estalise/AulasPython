@@ -26,4 +26,4 @@ elif mes == 11:
 elif mes == 12:
      print("O mes eh Dezembro")
 else:
-    print("Digite um numero de  1 a 12")
+    print("Mes invalido")

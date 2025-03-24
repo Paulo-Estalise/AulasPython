@@ -7,7 +7,7 @@ com a média entre 3.0 e 5.9 e reprovado com média menor do que 3.0.
 media = float(input("Qual foi a média anual do aluno? "))
 if media >= 6.0:
     print("O aluno está aprovado.")
-elif 3.0 <= media < 6.0:
+elif media >= 3.0:
     print("O aluno está de exame.")
 else:
     print("O aluno está reprovado.")

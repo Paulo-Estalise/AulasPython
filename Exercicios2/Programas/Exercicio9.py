@@ -4,7 +4,10 @@ Escreva um programa que leia um ano qualquer e verifique se o mesmo está entre 
  por 4 mas não por 100. Um ano também é bissexto se for divisível por 400.
 '''
 ano = int(input("Digite o ano: "))
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print("O ano eh bissexto")
+if ano >= 1000 and ano <= 2999:
+   if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+     print("O ano eh bissexto")
+   else:
+       print("O ano não eh bissexto")
 else:
-    print("O ano não eh bissexto")
+    print("o ano não esta no intervalo")

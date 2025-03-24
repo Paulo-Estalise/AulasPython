@@ -3,6 +3,7 @@ independente do número de horas. Escreva um algoritmo que pergunte ao usuário 
 de permanência em horas e escreva na tela o total a pagar.'''
 horas = float(input("Digite o tempo em horas no estacionamento: "))
 totalMult = horas * 5
-if totalMult > 35:
-    totalMult = 35
-print(f"O valor a pagar é: R$ {totalMult:.2f}")
+if horas <= 7:
+    print(f"O valor a pagar é: R$ {totalMult:.2f}")
+else:
+    print(f"O valor a pagar é: R$ 35.00")
